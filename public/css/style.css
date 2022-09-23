@@ -1,20 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;500;800&display=swap');
+
 body{
     margin: 0; 
     padding: 0; 
-    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: white; 
 }
 .navLogo{
-    height: 80px;
-    width: 240px;
+    height: 64.8px;
+    width: 194.4px;
 }
 .navbar{
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: black;
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    width: 100%;
+    padding: 5px;
 }
-.row {
-    background-color: whitesmoke;
-    height: 100vh;
-    width: 100wh;
+.navbarLabel{
+    color:white; 
+    height: 50px;
+    width: 150px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 800;
 }
+
 
 .footer{
     position: fixed; 
@@ -25,4 +44,44 @@ body{
     color: white;
     text-align: center;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userNameBox-pictureBox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-username-container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px; 
+    border-radius: 16px;
+    min-height: 500px;
+    margin: 5px; 
+}
+.username-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.username-box-top {
+    display: flex;
+    flex-direction: row;
+}
+.username-box-top > p {
+    margin-left: 16px;
+}
+.pictureBox{
+    border: 3px whitesmoke solid;
+    margin: 5px;
+    min-height: 600px;
+    border-radius: 16px;
+}
+
+.feedBtn{
+    width: 132px;
+    height: 44px; 
 }
